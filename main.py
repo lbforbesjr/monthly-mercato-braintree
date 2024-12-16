@@ -92,13 +92,7 @@ def generate_braintree_reports(month_str=None):
 # Run the report generator for the default month
 generate_braintree_reports()
 
-# Uncomment below to generate reports for specific months
-# months_2023 = [
-#     '2023-05',
-#     '2023-06',
-#     '2023-07',
-#     '2023-08',
-#     '2023-09',
-# ]
-# for month in months_2023:
+# Generate reports for the last 3 months
+# LM3 = [(dt.now() - MonthEnd(i)).strftime('%Y-%m') for i in range(1, 4)]
+# for month in LM3:
 #     generate_braintree_reports(month)
