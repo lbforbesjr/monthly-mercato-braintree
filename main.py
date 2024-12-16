@@ -84,8 +84,8 @@ def generate_braintree_reports(month_str=None):
     os.makedirs(REPORTS_DIR, exist_ok=True)
 
     # Save the reports to CSV files
-    df.to_csv(f'{REPORTS_DIR}/{month_str}_braintree_api_report.csv', index=False, mode='w')
-    refunds.to_csv(f'{REPORTS_DIR}/{month_str}_braintree_api_report_refunds.csv', index=False, mode='w')
+    df.to_csv(f'{REPORTS_DIR}/{month_str} braintree_api_report.csv', index=False, mode='w')
+    refunds.to_csv(f'{REPORTS_DIR}/{month_str} braintree_api_report_refunds.csv', index=False, mode='w')
 
     print(f'{month_str} report generated successfully.')
 
